@@ -1,0 +1,11 @@
+{ns job
+ import #{core}
+
+ init-test
+ {:zen/tags #{core/job-config}
+  :type :periodical
+  :actions [{:name :init-test}
+            {:name :deinit-test}]
+  :repeat-each 15}
+
+ }

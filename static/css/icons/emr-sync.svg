@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="21px" viewBox="0 0 20 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Group 13</title>
+    <desc>Created with Sketch.</desc>
+    <g id="bage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Final-Bage" transform="translate(-991.000000, -123.000000)">
+            <g id="Group-13" transform="translate(991.000000, 124.000000)">
+                <g id="Group-12" transform="translate(10.000000, 10.000000) rotate(-274.000000) translate(-10.000000, -10.000000) translate(1.000000, 1.000000)" stroke="#D8D8D8" stroke-width="3">
+                    <path d="M11.4912978,6.95500366 C14.1922498,6.12193009 16.4182338,3.96082575 17.2037871,1.02910087" id="Path" transform="translate(14.347542, 3.992052) rotate(274.000000) translate(-14.347542, -3.992052) "></path>
+                    <path d="M5.91318602,11.4590564 C3.5228194,12.4244716 1.59877104,14.4615068 0.880149922,17.1434373" id="Path" transform="translate(3.396668, 14.301247) rotate(274.000000) translate(-3.396668, -14.301247) "></path>
+                </g>
+                <path d="M2.79953492,14.7609683 C4.33007185,17.0020025 6.90511283,18.4729881 9.82372089,18.4729881 C11.8931213,18.4729881 13.7897992,17.7334749 15.2639011,16.5043019" id="Path" stroke="#979797" stroke-width="3"></path>
+                <path d="M16.9418552,5.32554323 C15.4241183,3.00567167 12.8029083,1.47298809 9.82372089,1.47298809 C7.8131275,1.47298809 5.96557949,2.17106836 4.51022925,3.33807651" id="Path" stroke="#979797" stroke-width="3"></path>
+                <polygon id="Path-6" fill="#979797" transform="translate(3.823721, 14.972988) rotate(-180.000000) translate(-3.823721, -14.972988) " points="0.323720893 16.4262652 7.32372089 18.4729881 7.32372089 11.4729881 4.76443259 14.9729881"></polygon>
+                <polygon id="Path-6" fill="#979797" points="12.3237209 6.42626518 19.3237209 8.47298809 19.3237209 1.47298809 16.7644326 4.97298809"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

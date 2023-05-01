@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "moment-timezone": "^0.5.40",
+    "react": "16.9.0",
+    "react-dom": "16.9.0"
+  },
+  "devDependencies": {
+    "shadow-cljs": "^2.20.19"
+  }
+}

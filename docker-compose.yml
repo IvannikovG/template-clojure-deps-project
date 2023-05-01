@@ -1,0 +1,48 @@
+version: '3.9'
+
+services:
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: md5
+      POSTGRES_USER: ${PGUSER}
+      POSTGRES_DB: general_db
+      POSTGRES_PASSWORD: ${PGPASSWORD}
+      PGUSER: postgres
+      PGPASSWORD: postgres
+      PGDATABASE: general_db
+      PGDATA: /var/lib/postgresql/data/pgdata
+    ports:
+      - "${PGPORT}:5432"
+    volumes:
+      - ./database-data:/var/lib/postgresql/data/pgdata
+
+  db-test:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: ${PGUSER}
+      POSTGRES_DB: test_general_db
+      POSTGRES_PASSWORD: ${PGPASSWORD}
+    ports:
+      - "${PGTESTPORT}:5432"
+
+#  web:
+#    restart: always
+#    container_name: chinese_dictionary
+#    environment:
+#      RELEASE: rel
+#      DEVELOPMENT: development
+#      PGUSER: postgres
+#      PGPASSWORD: postgres
+#      PGPORT: 5432
+#      PGDATABASE: chinese_dictionary_db
+#      JWT_SECRET: PUSHATHECAT
+#      PGHOST: db
+#    ports:
+#      - 7002:7002
+#    build:
+#      context: .
+#      dockerfile: ./Dockerfile
+#    depends_on:
+#      - db
+#      - db-test

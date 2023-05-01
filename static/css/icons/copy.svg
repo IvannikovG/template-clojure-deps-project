@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="20px" viewBox="0 0 17 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Group 36</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Buttons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-617.000000, -730.000000)">
+            <g id="Group-36" transform="translate(615.000000, 730.000000)">
+                <rect id="Rectangle" fill-opacity="0" fill="#D8D8D8" x="0" y="0" width="20" height="20"></rect>
+                <g id="Group-17" transform="translate(7.000000, 5.000000)" stroke="#017AFF" stroke-width="1.7">
+                    <path d="M1,0 L9.95089029,0 C10.5017006,1.20862399e-16 10.9488027,0.445416559 10.9508832,0.996222906 L10.9962086,12.9962229 C10.9982946,13.5485037 10.5522737,13.9979068 9.99999284,13.9999929 C9.99873381,13.9999976 9.99747478,14 9.99621575,14 L1,14 C0.44771525,14 6.76353751e-17,13.5522847 0,13 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z" id="Rectangle"></path>
+                </g>
+                <g id="Group-17" transform="translate(3.000000, 1.000000)" stroke="#017AFF" stroke-width="1.7">
+                    <path d="M3.04779905,14 L4.04779905,14 L0.920090278,14 C0.411938449,14 0,13.5821324 0,13.0666667 L0,0.933333333 C0,0.417867567 0.411938449,0 0.920090278,0 L10.0714475,0 C10.5782181,0 10.9895821,0.415683172 10.991531,0.92974395 L11,3.16358058" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

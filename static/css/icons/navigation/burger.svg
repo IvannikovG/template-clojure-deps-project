@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>burger</title>
+    <g id="Left-Menu" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Left-Menu-Example" transform="translate(-15.000000, -63.000000)" fill="#FFFFFF">
+            <g id="burger" transform="translate(15.000000, 63.000000)">
+                <rect id="Rectangle" transform="translate(10.500000, 1.500000) rotate(-180.000000) translate(-10.500000, -1.500000) " x="0" y="0" width="21" height="3"></rect>
+                <rect id="Rectangle" transform="translate(10.500000, 8.500000) rotate(-180.000000) translate(-10.500000, -8.500000) " x="0" y="7" width="21" height="3"></rect>
+                <rect id="Rectangle" transform="translate(10.500000, 15.500000) rotate(-180.000000) translate(-10.500000, -15.500000) " x="0" y="14" width="21" height="3"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

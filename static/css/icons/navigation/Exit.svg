@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Exit</title>
+    <g id="Exit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(6.000000, 4.000000)">
+            <rect id="Rectangle" fill="#999999" x="0" y="0" width="16" height="20"></rect>
+            <polygon id="Rectangle" fill="#D8D8D8" points="0 0 11 2.70907772 11 23 0 20.2909223"></polygon>
+            <polygon id="Path-6" fill="#FFFFFF" points="10 16 15 12.3589365 10.0928989 9 11.2429609 12.369761"></polygon>
+            <polygon id="Rectangle" fill="#FFFFFF" transform="translate(8.500000, 12.500000) rotate(-270.000000) translate(-8.500000, -12.500000) " points="7.5 8 9.5 8 9.5 17 7.5 17"></polygon>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="12px" viewBox="0 0 14 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g transform="translate(-161.000000, -463.000000)" id="Group" stroke="#979797">
+            <g transform="translate(162.000000, 464.000000)">
+                <polyline id="Path-11" points="0 4.66333008 5.71923828 0 11.5093994 4.66333008"></polyline>
+                <polyline id="Path-15" points="1.57836914 3.58496094 1.57836914 10.2817383 9.94262695 10.2817383 9.94262695 3.58496094"></polyline>
+                <polyline id="Path-20" points="4.42089844 10.2817383 4.42089844 5.04956055 7.21923828 5.04956055 7.21923828 10.2817383"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

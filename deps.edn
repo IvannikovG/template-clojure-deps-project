@@ -1,0 +1,98 @@
+{:paths ["src" "zrc" "build" "static" "resources" "test"]
+ #_#_:resource-paths ["ui/resources"]
+ :deps {;; DB DEPS ;;
+        org.clojure/clojure               {:mvn/version "1.11.1"}
+        org.xerial/sqlite-jdbc            {:mvn/version "3.39.2.1"}
+        org.postgresql/postgresql         {:mvn/version "42.5.0"}
+        org.clojure/java.jdbc             {:mvn/version "0.7.12"}
+        #_#_com.github.seancorfield/next.jdbc {:mvn/version "1.3.847"}
+        com.zaxxer/HikariCP               {:mvn/version "4.0.3"
+                                           #_#_:exclusions [org.postgresql/postgresql]}
+        metosin/jsonista                  {:mvn/version "0.3.7"}
+
+
+        ;; SERVER DEPS ;;
+
+        clj-jwt/clj-jwt           {:mvn/version "0.1.1"}
+        ring/ring-core            {:mvn/version "1.8.2"}
+        ring/ring-jetty-adapter   {:mvn/version "1.8.2"}
+        ring/ring-devel           {:mvn/version "1.8.2"}
+        ring-logger/ring-logger   {:mvn/version "1.0.1"}
+        ring/ring-json            {:mvn/version "0.5.0"}
+        cheshire/cheshire         {:mvn/version "5.10.0"}
+        org.clojure/data.json     {:mvn/version "2.4.0"}
+
+        clj-time/clj-time         {:mvn/version "0.15.2"}
+        clojure-data/clojure-data {:mvn/version "0.1.4"}
+
+        com.github.seancorfield/honeysql {:mvn/version "2.3.928"}
+        zen-lang/zen              {:mvn/version "0.0.1-SNAPSHOT"}
+
+        jumblerg/ring-cors        {:mvn/version "2.0.0"}
+        dsql/dsql                 {:git/url "https://github.com/HealthSamurai/dsql"
+                                   :sha "1086f64180d7f601ffff0335139594ccef2d2a7b"}
+        matcho/matcho             {:mvn/version "0.1.0-RC6"}
+
+        clj-http/clj-http         {:mvn/version "3.12.3"}
+        morse/morse               {:mvn/version "0.4.3"}
+
+        org.clojure/data.csv      {:mvn/version "1.0.0"}
+        csv-helper/csv-helper     {:git/url "https://github.com/IvannikovG/csv-helper"
+                                   :sha "e590de1b67566863f76565d4800895f9e9364c96"}
+        html-parser/hickory       {:git/url "https://github.com/clj-commons/hickory"
+                                   :sha "a308fafdf1e0483087a105544f2cb190cc3289b0"}
+        org.clojure/java.classpath {:mvn/version "1.0.0"}}
+
+ :aliases {:kaocha
+           {:extra-deps {lambdaisland/kaocha {:mvn/version "1.0.732"}}
+            :jvm-opts ^:replace ["-XX:-OmitStackTraceInFastThrow"]
+            :main-opts ["-m" "kaocha.runner" "--config-file" "test.edn"]}
+
+           :test
+           {:extra-paths ["test" "zrc"]}
+
+           :cljs
+           {:extra-paths ["ui/srcs" "ui/env"]
+            :extra-deps
+            {org.clojure/clojurescript           {:mvn/version "1.11.60"}
+             com.lucasbradstreet/cljs-uuid-utils {:mvn/version "1.0.2"}
+             reagent/reagent                     {:mvn/version "0.9.1"}
+             re-frame/re-frame                   {:mvn/version "0.10.7"}
+             re-frisk/re-frisk                   {:mvn/version "1.0.0"}
+             reagent-utils/reagent-utils         {:mvn/version "0.3.3"}
+             clj-time/clj-time                   {:mvn/version "0.13.0"}
+             cljs-http/cljs-http                 {:mvn/version "0.1.45"}
+             hiccup/hiccup                       {:mvn/version "1.0.5"}
+             garden/garden                       {:mvn/version "1.3.9"}
+             bouncer/bouncer                     {:mvn/version "1.0.1"}
+             route-map/route-map                 {:mvn/version "0.0.7-RC1"}
+             cljsjs/moment-timezone              {:mvn/version "0.5.11-1"}
+             page-renderer/page-renderer         {:mvn/version "0.4.6"}}}
+
+           :ui
+           {:extra-paths ["dev"]
+            :extra-deps
+            {thheller/shadow-cljs {:mvn/version "2.20.16"}}}
+
+           :shadow
+           {:main-opts ["-m" "shadow.cljs.devtools.cli" "watch" "app"]}
+
+           :shadow-release
+           {:main-opts ["-m" "shadow.cljs.devtools.cli" "release" "app"]}
+
+           :nrepl {:extra-paths ["zrc"]
+                   :extra-deps {nrepl/nrepl {:mvn/version "1.0.0"}
+                                refactor-nrepl/refactor-nrepl {:mvn/version "2.5.0-SNAPSHOT"}
+                                cider/cider-nrepl {:mvn/version "0.26.0"}}
+                   :main-opts  ["-m" "nrepl.cmdline"
+                                "-b" "0.0.0.0"
+                                "-p" "12346"
+                                "--middleware" "[cider.nrepl/cider-middleware,refactor-nrepl.middleware/wrap-refactor]"]}
+
+           :build
+           {:ns-default build
+            #_#_:jvm-opts    ^:replace ["-XX:-OmitStackTraceInFastThrow"]
+            :extra-paths ["build" "zrc" "static"]
+            :extra-deps {thheller/shadow-cljs    {:mvn/version "2.20.18"}
+                         com.google.guava/guava  {:mvn/version "31.1-jre"}}
+            :deps {io.github.clojure/tools.build {:git/tag "v0.9.0" :git/sha "8c93e0c"}}}}}

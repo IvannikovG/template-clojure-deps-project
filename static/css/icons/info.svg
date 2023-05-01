@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>reload</title>
+    <desc>Created with Sketch.</desc>
+    <g id="bage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="New-Header" transform="translate(-751.000000, -138.000000)">
+            <g id="reload" transform="translate(752.000000, 139.000000)">
+                <circle id="Oval" stroke="#0079FF" stroke-width="1.6" cx="9" cy="9" r="9"></circle>
+                <circle id="Oval" fill="#0079FF" cx="9" cy="6" r="1"></circle>
+                <line x1="9" y1="9" x2="9" y2="13" id="Path-2" stroke="#0079FF" stroke-width="2" stroke-linecap="round"></line>
+            </g>
+        </g>
+    </g>
+</svg>

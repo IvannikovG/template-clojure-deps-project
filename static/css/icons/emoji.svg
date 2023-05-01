@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Group 18</title>
+    <desc>Created with Sketch.</desc>
+    <g id="New-Notes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-926.000000, -297.000000)" id="Group-18">
+            <g transform="translate(927.000000, 298.000000)">
+                <circle id="Oval" stroke="#979797" stroke-width="2" cx="8" cy="8" r="8"></circle>
+                <path d="M6,9 C6.25486495,10.1567198 7.0463822,11 7.98332931,11 C8.95524975,11 9.77774574,10.2234037 10,9" id="Path" stroke="#979797" stroke-width="2"></path>
+                <rect id="Rectangle" fill="#979797" x="10" y="5" width="3" height="2"></rect>
+                <rect id="Rectangle" fill="#979797" x="3" y="5" width="3" height="2"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

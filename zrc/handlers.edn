@@ -1,0 +1,57 @@
+{ns handlers
+ import #{core}
+
+ rpc-handler
+ {:zen/tags #{zen/schema core/handler core/handler-schema}
+  :type zen/map
+  :confirms #{core/handler-schema}
+  :keys {:method "post"
+         :path  ["rpc"]
+         :name   :rpc}}
+
+ register
+ {:zen/tags #{zen/schema core/handler}
+  :type zen/map
+  :confirms #{core/handler-schema}
+  :keys {:method "post"
+         :path ["register"]
+         :name :auth.register/register}}
+
+ login
+ {:zen/tags #{zen/schema core/handler}
+  :type zen/map
+  :confirms #{core/handler-schema}
+  :keys {:method "post" :path ["login"]
+         :name :auth.login/login}}
+
+ resource
+ {:zen/tags #{zen/schema core/handler}
+  :type zen/map
+  :keys {:name :resource
+         :resource true
+         :login-required? true}}
+
+ jwt-required
+ {:zen/tags #{zen/schema core/handler}
+  :type zen/map
+  :keys {:name :jwt-required
+         :login-required? true
+         :need-auth! true
+         :method "get" :path ["$jwt-required"]}}
+
+ test
+ {:zen/tags #{zen/schema core/handler}
+  :type zen/map
+  :keys {:name :test
+         :method "get" :path ["$debug"]}}
+
+ static-host
+ {:zen/tags #{zen/schema core/handler}
+  :type zen/map
+  :confirms #{core/handler-schema}
+  :keys {:method "get"
+         :static true
+         :path  ["static"]
+         :name   :static}}
+
+ }

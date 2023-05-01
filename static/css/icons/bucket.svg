@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Group 11</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design-Export" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Claims" transform="translate(-1082.000000, -241.000000)" stroke="#979797" stroke-width="1.4">
+            <g id="Group-11" transform="translate(1083.000000, 242.000000)">
+                <path d="M0,2 L1.09090909,11.4353398 C1.09090909,12.7062767 2.94232178,14 6.05646307,14 C9.17060436,14 10.9090909,12.7062767 10.9090909,11.4353398 L12,2" id="Shape" stroke-linecap="round" stroke-linejoin="round"></path>
+                <ellipse id="Oval" cx="6" cy="2" rx="6" ry="2"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>

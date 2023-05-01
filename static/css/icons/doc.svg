@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="21px" viewBox="0 0 16 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>doc</title>
+    <desc>Created with Sketch.</desc>
+    <g id="bage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="New-Header" transform="translate(-819.000000, -137.000000)">
+            <g id="doc" transform="translate(820.000000, 138.000000)">
+                <path d="M1,0 L7.14603139,0 C7.97774583,2.91305745e-16 8.77213498,0.345280425 9.33953004,0.95340193 L13.1934987,5.08400045 C13.7117713,5.63947364 14,6.37089001 14,7.13059852 L14,18 C14,18.5522847 13.5522847,19 13,19 L1,19 C0.44771525,19 6.76353751e-17,18.5522847 0,18 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z" id="Rectangle" stroke="#0079FF" stroke-width="1.5"></path>
+                <path d="M14,6 C12.908121,6 11.2703024,6 9.08654438,6 C8.48646249,6 8,5.48377683 8,4.84698327 C8,2.69276848 8,1.07710739 8,0" id="Path" stroke="#0079FF" stroke-width="1.5"></path>
+                <line x1="7" y1="9" x2="7" y2="15" id="Path-2" stroke="#44D5E9" stroke-width="2" stroke-linecap="round"></line>
+                <line x1="10" y1="12" x2="4" y2="12" id="Path-2" stroke="#44D5E9" stroke-width="2" stroke-linecap="round"></line>
+            </g>
+        </g>
+    </g>
+</svg>

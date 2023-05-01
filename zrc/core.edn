@@ -1,0 +1,63 @@
+{ns core
+
+ ;; DO NOT CHANGE NAMES WITHOUT A REASON
+
+ crud
+ {:zen/tags #{zen/tag}}
+
+ resource
+ {:zen/tags #{zen/tag}}
+
+ handler
+ {:zen/tags #{zen/tag zen/schema}}
+
+ resource-config
+ {:zen/tags #{zen/tag}}
+
+ job-config
+ {:zen/tags #{zen/tag}}
+
+ base-resource-config
+ {:zen/tags #{zen/tag}}
+
+ base-resource-config-schema
+ {:zen-tags #{zen/schema base-resource-config}
+  :type zen/map
+  :keys {:db-schema
+         {:type zen/map
+          :keys {:index-fields
+                 {:type zen/vector
+                  :every {:type zen/map
+                          :require #{:name :path}
+                          :keys {:name {:type zen/string}
+                                 :path {:type zen/string}}}}}}
+         }}
+
+ resource-schema
+ {:zen/tags #{zen/schema}
+  :type zen/map
+  :require #{:resourceType :id}
+  :keys {:resourceType {:type zen/string}
+         :id           {:type zen/string}}}
+
+ resource-crud
+ {:zen/tags #{core/crud}
+  :type zen/map
+  :require #{:resourceType :method}
+  :keys {:method {:type zen/string}
+         :query-string {:type zen/string}
+         :body {:type zen/map}}}
+
+ handler-schema
+ {:zen/tags #{zen/schema zen/tag}
+  :type zen/map
+  :keys {:method                  {:type zen/string}
+         :name                    {:type zen/keyword}
+         :path                    {:type zen/vector}
+         :login-required?         {:type zen/boolean}
+         :need-auth!              {:type zen/boolean}
+         :subscription-required   {:type zen/boolean}
+         :limited-by-subscription {:type zen/boolean}
+         :resource                {:type zen/boolean}}}
+
+ }

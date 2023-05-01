@@ -1,0 +1,10 @@
+{:deps {:aliases [:cljs :ui]}
+ :dev-http {8080 ["static/html"]}
+ :builds {:app {:target :browser
+                :dev {:modules    {:main {:init-fn ui.core/main}}
+                      :output-dir "static/js"}
+                #_#_:devtools    {:preloads   [re-frisk.preload]
+                              :watch-path "/static/css"}
+                :release     {:modules    {:main {:init-fn ui.core/main}}
+                              :output-dir "static/release/js"
+                              :compiler-options {:optimizations :advanced}}}}}

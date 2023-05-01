@@ -1,0 +1,16 @@
+#kaocha/v1
+{:tests [{:id :unit
+          :test-paths ["test"]
+          :skip-meta [:xxx]}]
+
+
+ :fail-fast?                  true
+ :color?                      true
+ :reporter                    kaocha.report.progress/report
+
+ :plugins                     [:kaocha.plugin/filter
+                               :kaocha.plugin/profiling]
+
+
+ :kaocha.plugin.randomize/randomize? false
+ :kaocha.plugin.profiling/profiling? true}

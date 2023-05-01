@@ -1,0 +1,160 @@
+{ns rpc
+ import #{core}
+
+ ;;rpc cases are request and notification
+ ;;notification has no id
+
+ rpc-request-base
+ {:zen/tags #{zen/tag zen/schema}
+  :type zen/map
+  :require #{:jsonrpc :method} ;; id if included must be 1 or "1", not "1.2" "a",  NULL is valid
+  :keys {:jsonrpc {:type zen/string
+                   :const {:value "2.0", :zen/desc "MUST be exactly 2.0"}}
+         :method  {:type zen/string}}}
+
+ rpc-id
+ {:type zen/case
+  :zen/tags #{zen/schema}
+  :zen/desc "this means it can use 1.56 can be used, using non-number string is prohibited"
+  :case [{:when {:type zen/string}
+          :then {}}
+         {:when {:type zen/integer}
+          :then {}}]}
+
+ rpc-params
+ {:type zen/case
+  :zen/tags #{zen/schema}
+  :case [{:when {:type zen/map}
+          :then {:confirms #{rpc-map-params}}}
+         {:when {:type zen/vector}
+          :then {:confirms #{rpc-vec-params}}}]}
+
+ rpc-request
+ {:zen/tags #{zen/tag zen/schema}
+  :confirms #{rpc-request-base}
+  :type zen/map
+  :keys {:params  {:confirms #{rpc-params}}
+         :id      {:confirms #{rpc-id}}}}
+
+ rpc-request-batch
+ {:zen/tags #{zen/tag zen/schema}
+  :zen/desc "a vector of requests"
+  :type zen/vector
+  :every {:confirms #{rpc-request}}}
+
+ rpc-notification
+ {:zen/tags #{zen/tag zen/schema}
+  :confirms #{rpc-request-base}
+  :type zen/map
+  :keys {:params  {:confirms #{rpc-params}}}}
+
+ rpc-response
+ {:zen/tags #{zen/tag zen/schema}
+  :require #{:jsonrpc :id} ;; or error or result, how?
+  :type zen/map
+  :exclusive-keys #{#{:error :result}}
+  :keys {:jsonrpc {:type zen/string
+                   :const {:value "2.0", :zen/desc "MUST be exactly 2.0"}}
+         :result  {:type zen/any
+                   :zen/desc "if error - must not be present"}
+         :error   {:confirms #{rpc-error}
+                   :zen/desc "if result - must not be present"}
+         :id      {:confirms #{rpc-id}}
+         :meta    {:confirms #{rpc-response-meta-info}
+                   :zen/desc "not in a standard however useful"}}}
+
+ ;; Configuration of some specific behaviour
+ ;; of rpc depending on there is id or not
+ ;;
+ ;; 1
+ ;; The Server MUST reply with the same value in the Response object if included.
+ ;; This member is used to correlate the context between the two objects.
+
+ rpc-entity-base-conf
+ {:zen/tags #{zen/tag zen/schema}
+  :type zen/map
+  :keys {:needs-answer                {:type zen/boolean}
+         :return-request-if-included  {:type zen/boolean}
+         :need-response-on-error      {:type zen/boolean}}}
+
+ request-conf
+ {:zen/tags #{rpc-entity-base-conf zen/tag}
+  :return-request-if-included  true
+  :needs-answer                true}
+
+ notification-conf
+ {:zen/tags #{rpc-entity-base-conf zen/tag}
+  :needs-answer               false}
+
+ response-conf
+ {:zen/tags #{rpc-entity-base-conf zen/tag}
+  :need-response-on-error       false}
+
+ ;; rpc methods - this only used as a "definer" of
+ ;; available rpc methods
+
+ rpc-request-method
+ {:zen/tags #{zen/tag}}
+
+ rpc-request-notification
+ {:zen/tags #{zen/tag}}
+
+ ;;;
+ ;;; Misc components of entities
+
+ rpc-response-meta-info
+ {:zen/tags #{zen/tag zen/schema}
+  :require #{}
+  :type zen/map
+  :keys {:requesting-params {:type zen/any #_#_:confirms #{rpc-params}}
+         :requesting-method {:type zen/string}}}
+
+ rpc-error
+ {:zen/tags #{zen/tag zen/schema}
+  :zen/desc "error's schema"
+  :require #{:jsonrpc :id} ;; or error or result, how?
+  :type zen/map
+  :keys {:code    {:type zen/integer}
+         :message {:type zen/string}
+         :data    {:type zen/any}}}
+
+ rpc-vec-params
+ {:zen/tags #{zen/schema}
+  :type zen/vector}
+
+ rpc-map-params
+ {:zen/tags #{zen/schema}
+  :type zen/map}
+
+;;;; possibly move to other namespace
+ test-rpc
+ {:zen/tags #{zen/schema rpc-request-method request-conf}
+  :type zen/map
+  :keys {:method   {:type zen/string}
+         :params   {:type zen/map
+                    :keys {:a {:type zen/any}
+                           :b {:type zen/any}}}
+         :id       {:type zen/integer}
+         :jsonrpc {:type zen/string}}}
+
+ test-rpc2
+ {:zen/tags #{zen/schema rpc-request-method request-conf}
+  :type zen/map
+  :keys {:method   {:type zen/string}
+         :params   {:type zen/map
+                    :keys {:a {:type zen/any}}}
+         :id       {:type zen/integer}
+         :jsonrpc {:type zen/string}}}
+
+ test-rpc-notification
+ {:zen/tags #{zen/schema rpc-request-notification request-conf}
+  :type zen/map
+  :keys {:method   {:type zen/string}
+         :params   {:type zen/map
+                    :keys {:a {:type zen/any}}}
+         :id       {:type zen/integer}
+         :jsonrpc {:type zen/string}}}
+
+
+
+ }

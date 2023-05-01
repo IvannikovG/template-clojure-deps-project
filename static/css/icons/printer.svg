@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 26</title>
+    <g id="Buttons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-653.000000, -702.000000)">
+            <g id="Group-26" transform="translate(653.000000, 702.000000)">
+                <rect id="Rectangle" fill-opacity="0" fill="#D8D8D8" x="0" y="0" width="20" height="20"></rect>
+                <g id="Group-25" transform="translate(1.000000, 1.000000)">
+                    <path d="M3,4.06713867 L3,1 C3,0.44771525 3.44771525,0 4,0 L14,0 C14.5522847,0 15,0.44771525 15,1 L15,3.92919922" id="Path" stroke="#017AFF" stroke-width="1.7"></path>
+                    <path d="M3.8737793,14 L2,14 C0.8954305,14 0,13.1045695 0,12 L0,6 C0,4.8954305 0.8954305,4 2,4 L16,4 C17.1045695,4 18,4.8954305 18,6 L18,12 C18,13.1045695 17.1045695,14 16,14 L14.0285645,14 L14.0285645,14" id="Path" stroke="#017AFF" stroke-width="1.7"></path>
+                    <rect id="Rectangle" stroke="#017AFF" stroke-width="1.7" x="4" y="11" width="10" height="7" rx="1"></rect>
+                    <circle id="Oval" fill="#017AFF" cx="3" cy="7" r="1"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,33 @@
+{ns resource-configs
+ import #{core}
+
+
+ app-user-config
+ {:zen/tags #{core/resource-config}
+  :db-schema
+  {:index-fields [{:name "user-first-name" :path "(resource#>>'{name, first-name}')"}
+                  {:name "user-last-name" :path "(resource#>>'{name, first-name}')"}]}}
+
+ session-config
+ {:zen/tags #{core/resource-config}
+  :db-schema
+  {:index-fields [{:name "session_id" :path "(resource#>>'{id}')"}]}}
+
+ car-config
+ {:zen/tags #{core/resource-config}
+  :db-schema
+  {:index-fields [{:name "car_brand" :path "(resource#>>'{brand}')"}]}}
+
+ #_#_report-case-config
+ {:zen/tags #{core/resource-config}
+  :db-schema
+  {:index-fields [{:name "report_case_id" :path "resource#>>'{id}'"
+                   :a "should be skipped"}]}}
+
+ ChineseRecord
+ {:zen/tags #{core/resource-config}
+  :db-schema
+  {:index-fields [{:name "record_id" :path "id" }]}}
+
+
+ }

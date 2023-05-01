@@ -1,0 +1,28 @@
+{ns resources
+ import #{core}
+
+ session
+ {:zen/tags #{zen/schema core/resource}
+  :type zen/map
+  :confirms #{core/resource-schema}
+  :keys {:expiration {:type zen/datetime}
+         :user-id    {:type zen/string}}}
+
+ app-user
+ {:zen/tags #{zen/schema core/resource}
+  :type zen/map
+  :confirms #{core/resource-schema}
+  :require #{:username :password}
+  :keys {:username {:type zen/string}
+         :password {:type zen/string}
+         :name     {:type zen/map
+                    :keys {:first-name {:type zen/string}
+                           :last-name  {:type zen/string}}}}}
+
+ Prediction
+ {:zen/tags #{zen/schema core/resource}
+  :type zen/map
+  :confirms #{core/resource-schema}}
+
+
+ }

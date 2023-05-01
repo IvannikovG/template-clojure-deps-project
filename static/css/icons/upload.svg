@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="19px" viewBox="0 0 20 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>upload</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Buttons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-683.000000, -702.000000)">
+            <g id="upload" transform="translate(683.000000, 702.000000)">
+                <rect id="Rectangle" fill-opacity="0" fill="#D8D8D8" x="0" y="0" width="20" height="20"></rect>
+                <g id="Group-9" transform="translate(1.000000, 0.000000)">
+                    <path d="M8.918836,13.7473797 C9.07716084,13.9149595 9.28747294,14 9.49778505,14 C9.70809715,14 9.91604619,13.9149595 10.0767341,13.7473797 L13.7607404,9.84802287 C14.0797532,9.51036208 14.0797532,8.96260124 13.7607404,8.62494045 C13.6071417,8.46236303 13.4015557,8.37232015 13.1841545,8.37232015 C12.9667532,8.37232015 12.7611672,8.46236303 12.6075685,8.62494045 L10.3177659,11.0485946 L10.3177659,0.865412101 C10.3177659,0.387684612 9.95149205,0 9.5001481,0 C9.04880416,0 8.68253027,0.387684612 8.68253027,0.865412101 L8.68253027,11.0485946 L6.39272773,8.62494045 C6.07371499,8.28727966 5.55620544,8.28727966 5.23955576,8.62494045 C4.92054302,8.96260124 4.92054302,9.51036208 5.2371927,9.84802287 L8.918836,13.7473797 Z" id="Shape" fill="#017AFF" fill-rule="nonzero"></path>
+                    <line x1="0" y1="17.5" x2="18" y2="17.5" id="Path-8" stroke="#017AFF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
